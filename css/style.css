@@ -1,0 +1,113 @@
+#wrapper{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #EAEAEA;
+}
+header{
+    background-image: url("../images/banner.png");
+    color: #eee;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    float: left;
+    font-family: Century Gothic, serif;
+    width: 150px;
+    margin-top: 30px;
+}
+nav a{
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 20px;
+}
+a:hover{
+    color: aquamarine;
+}
+main{
+    margin-left: 150px;
+    padding: 20px;
+    background-color:  #FFFFFF;
+    overflow: auto;
+}
+#logo{
+    float: left;
+    margin-right: 2%;
+}
+#shortdesc{
+    overflow: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.subheading{
+    clear: both;
+    padding-top: 3%;
+}
+.newrelease{
+    width: 31%;
+    margin: 0 1%;
+    padding: 1%;
+    border: 1px solid #006d77;
+    float: left;
+    box-sizing: border-box;
+}
+#newre{
+    display: flex; 
+}
+#event{
+    display: flex;
+}
+.events{
+    width: 47%;
+    margin: 0 1%;
+    padding: 1%;
+    border: 1px solid #006d77;
+    float:left;
+    box-sizing: border-box;
+}
+h1{
+    font-family: Century Gothic, serif;
+    font-size: 3em;
+    font-weight: 600;
+    line-height: 500%;
+    text-align: center;
+    margin: 0;
+    text-shadow: 2px 2px 10px white;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: #006d77;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+footer{
+    clear: both;
+    font-family: Century Gothic, serif;
+    font-size: smaller;
+    background-color: #006d77;
+    color: #eee;
+    padding: 10px 10%;
+}
+.store{
+    width: 45%;
+    margin: 1%;
+    padding: auto;
+    float:left;
+}
+hr{
+    clear: both;
+}
+#copyright{
+    font-family: serif;
+    font-style: italic;
+    text-align: center;
+}
