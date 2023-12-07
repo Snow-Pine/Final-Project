@@ -75,7 +75,8 @@ body {
 #function span:hover,
 #searchingBar span:hover,
 #subscription svg:hover,
-#disclaimer a:hover {
+#disclaimer a:hover,
+.navbar-foot a:hover{
     color: #008a96;
 }
 
