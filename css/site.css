@@ -71,6 +71,14 @@ body {
     padding-left: 14px;
 }
 
+.navbar-head a:hover,
+#function span:hover,
+#searchingBar span:hover,
+#subscription svg:hover,
+#disclaimer a:hover {
+    color: #008a96;
+}
+
 #mainbanner a{
     display: flex;
     justify-content: center;
@@ -235,6 +243,11 @@ h2 {
     align-items: center;
 }
 
+.subbutton {
+    border: 2px solid #3899a2;
+    background-color: #3899a2;
+}
+
 @media screen and (max-width: 768px) {
     #headertop {
         display: none;
@@ -305,6 +318,9 @@ h2 {
         align-items: center;
     }
 
+    .events {
+        width: 300px;
+    }
     .events p{
         margin: 0;
     }
