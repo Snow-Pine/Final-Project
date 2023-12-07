@@ -1,0 +1,21 @@
+#books{
+    display:grid;
+    grid-template-columns: 24% 24% 24% 24%;
+}
+section{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0;
+}
+
+@media all and (max-width:768px) {
+    #books{
+        display:grid;
+        grid-template-columns: 45% auto;
+    }
+    section{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 10px 0;
+    }
+}
