@@ -1,188 +1,3 @@
-/* Tsz Chin Wong n01604038 wireframe1 */
-/* body {
-    margin:0;
-}
-
-#headertopbanner {
-    background-color: black;
-    height: 3em;
-}
-
-#headertopbanner {
-    color: azure;
-    font-family:Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#headertop {
-    display: flex;
-    justify-content:end;
-    align-items: center;
-    font-family:Arial, Helvetica, sans-serif;
-    width: 100%;
-    height: 3em;
-    background-color: #FAF9F6;
-}
-
-#headertop a {
-    margin-right: 1em;
-    padding: 10px;
-    text-decoration: none;
-    color: black;
-}
-
-#headertop a:hover {
-    color: #008a96;
-}
-
-#search {
-    position: relative;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    width: 100%;
-    background-color: #FAF9F6;
-}
-
-
-#searchingBar input {
-    box-sizing: border-box;
-    padding-right: 80px;
-    padding-left: 14px;
-    height: 3em;
-    width: 80%;
-    border: none;
-    font-size: 18px;
-}
-
-
-#searchingBar form {
-    display: flex;
-    align-items: center;
-    width: 600px;
-    border-radius: 28px;
-    border: 2px gray solid;
-    background-color: white;
-}
-
-#searchingBar span {
-    padding-left: 14px;
-}
-
-.navbar-head a:hover,
-#function span:hover,
-#searchingBar span:hover,
-#subscription svg:hover,
-#disclaimer a:hover,
-.navbar-foot a:hover{
-    color: #008a96;
-}
-
-#mainbanner a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2em 0;
-}
-
-#function {
-    display: flex;
-    width: 200px;
-}
-
-.header-icons {
-    color: black;
-    padding: 10px 10px;
-}
-
-.navbar-head {
-    font-family:Arial, Helvetica, sans-serif;
-    padding: 1.5em 0 1.5em 0;
-    border-bottom: 1px gray solid;
-    background-color: #FAF9F6;
-}
-
-.navbar-head nav{
-    display: flex;
-    justify-content: flex-start;
-}
-
-.navbar-head a {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    margin-left: 1.2em;
-}
-
-
-
-.social {
-    border-top: 1px gray solid;
-    font-family:Arial, Helvetica, sans-serif;
-    background-color: #FAF9F6;
-    display: flex;
-    flex-direction: column;
-    padding-top: 2em;
-    margin-top: 2em;
-}
-
-.navbar-foot nav{
-    display: flex;
-    flex-direction: column;
-}
-
-.navbar-foot span{
-    font-weight: 800;
-    font-family:Arial, Helvetica, sans-serif;
-    color: rgb(28, 28, 28);
-    padding-bottom: 10px;
-}
-
-.navbar-foot a{
-    text-decoration: none;
-    font-family:Arial, Helvetica, sans-serif;
-    color: rgb(71, 71, 71);
-    margin-bottom: 5px;
-}
-
-#social-content a{
-    color: black;
-}
-
-#disclaimer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1em 0 1em 0;
-}
-
-#disclaimer a{
-    text-decoration: none;
-    color: black;
-}
-
-#subscription a {
-    text-decoration: none;
-    color: black;
-}
-
-#subscription nav {
-    margin-top: 10px;
-}
-
-.linksnsubscribe {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.subbutton {
-    border: 2px solid #3899a2;
-    background-color: #3899a2;
-} */
-
 body {
     font-family: 'Arial', sans-serif;
     background-color: #FAF9F6;
@@ -191,7 +6,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
     height: 100vh;
+}
+
+#mobile-logo {
+    display: none;
 }
 
 .login-container {
@@ -200,8 +20,30 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    width: 400px;
+    width: 100%;
+    max-width: 800px;
     height: 500px;
+    display: flex;
+}
+
+
+.form-details, .form-box {
+    width: 100%;
+}
+
+.form-details {
+    background-image: url("../images/info_pic_v2.png"); /* from: https://express.adobe.com/express-apps/logo-maker/preview*/
+    background-size: 300px 500px;
+    background-repeat: no-repeat;
+    color: #457170;
+}
+
+.form-details h2 {
+    color: #457170;
+}
+
+.form-details p {
+    margin: 16px 5px;
 }
 
 h2 {
@@ -234,21 +76,21 @@ label {
 }
 
 form .input-field {
-    height: 50px;
+    height: 100%;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     position: relative;
     color: rgba(136, 136, 136, 0.859);
 }
 
 form .input-field input {
     padding: 10px;
-    margin-bottom: 15px;
+    /* margin-bottom: 10px; */
     border: 1px solid #ccc;
     border-radius: 4px;
     padding: 0 15px;
     outline: none;
-    height: 90%;
+    height: 45px;
     width: 80%;
 }
 
@@ -259,8 +101,8 @@ form .input-field input {
 
 form .input-field label{
     position: absolute;
-    top: 45%;
-    left: 40px;
+    top: 30%;
+    left: 30px;
     transform: translateY(-50%);
     pointer-events: none;
     transition: 0.2s ease;
@@ -294,6 +136,16 @@ form .signin-field a,
     color: #008a96;;
 }
 
+.error-msg {
+    color: red;
+    font-size: small;
+    text-align: left;
+}
+
+.error-msg span {
+    margin-left: 20px;
+}
+
 button:hover {
     background-color: rgb(34, 177, 139);
 }
@@ -308,93 +160,12 @@ footer {
     height: 20%;
 }
 
-
-
 @media screen and (max-width: 768px) {
-    #headertop {
+    .form-details {
         display: none;
     }
 
-    #search {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr 1fr;
+    #mobile-logo {
+        display:block;
     }
-
-    #searchingBar {
-        grid-column: 1/4;
-        grid-row: 2/3;
-        width: 100%;
-    }
-
-    #searchingBar form{
-        width: 90%;
-        margin-left: 2em;
-    }
-
-    #function {
-        grid-column: 3/4;
-        grid-row: 1/2;
-    }
-
-    .navbar-head nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar-head a {
-        margin-bottom: 0.5em;
-        text-transform: uppercase;
-        font-size: 20px;
-    }
-
-    #newR {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 4fr;
-    }
-
-    #newR section {
-        grid-column: 1/3;
-        height: auto;
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #event {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 4fr;
-    }
-
-    #event section {
-        height: auto;
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .events {
-        width: 300px;
-    }
-    .events p{
-        margin: 0;
-    }
-
-    .navbar-foot {
-        display: none;
-    }
-
-    .linksnsubscribe {
-        margin-bottom: 2em;
-    }
-
-
-
 }

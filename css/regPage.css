@@ -1,187 +1,3 @@
-/* Tsz Chin Wong n01604038 wireframe1 */
-/* body {
-    margin:0;
-}
-
-#headertopbanner {
-    background-color: black;
-    height: 3em;
-}
-
-#headertopbanner {
-    color: azure;
-    font-family:Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#headertop {
-    display: flex;
-    justify-content:end;
-    align-items: center;
-    font-family:Arial, Helvetica, sans-serif;
-    width: 100%;
-    height: 3em;
-    background-color: #FAF9F6;
-}
-
-#headertop a {
-    margin-right: 1em;
-    padding: 10px;
-    text-decoration: none;
-    color: black;
-}
-
-#headertop a:hover {
-    color: #008a96;
-}
-
-#search {
-    position: relative;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    width: 100%;
-    background-color: #FAF9F6;
-}
-
-
-#searchingBar input {
-    box-sizing: border-box;
-    padding-right: 80px;
-    padding-left: 14px;
-    height: 3em;
-    width: 80%;
-    border: none;
-    font-size: 18px;
-}
-
-
-#searchingBar form {
-    display: flex;
-    align-items: center;
-    width: 600px;
-    border-radius: 28px;
-    border: 2px gray solid;
-    background-color: white;
-}
-
-#searchingBar span {
-    padding-left: 14px;
-}
-
-.navbar-head a:hover,
-#function span:hover,
-#searchingBar span:hover,
-#subscription svg:hover,
-#disclaimer a:hover,
-.navbar-foot a:hover{
-    color: #008a96;
-}
-
-#mainbanner a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2em 0;
-}
-
-#function {
-    display: flex;
-    width: 200px;
-}
-
-.header-icons {
-    color: black;
-    padding: 10px 10px;
-}
-
-.navbar-head {
-    font-family:Arial, Helvetica, sans-serif;
-    padding: 1.5em 0 1.5em 0;
-    border-bottom: 1px gray solid;
-    background-color: #FAF9F6;
-}
-
-.navbar-head nav{
-    display: flex;
-    justify-content: flex-start;
-}
-
-.navbar-head a {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    margin-left: 1.2em;
-}
-
-
-
-.social {
-    border-top: 1px gray solid;
-    font-family:Arial, Helvetica, sans-serif;
-    background-color: #FAF9F6;
-    display: flex;
-    flex-direction: column;
-    padding-top: 2em;
-    margin-top: 2em;
-}
-
-.navbar-foot nav{
-    display: flex;
-    flex-direction: column;
-}
-
-.navbar-foot span{
-    font-weight: 800;
-    font-family:Arial, Helvetica, sans-serif;
-    color: rgb(28, 28, 28);
-    padding-bottom: 10px;
-}
-
-.navbar-foot a{
-    text-decoration: none;
-    font-family:Arial, Helvetica, sans-serif;
-    color: rgb(71, 71, 71);
-    margin-bottom: 5px;
-}
-
-#social-content a{
-    color: black;
-}
-
-#disclaimer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1em 0 1em 0;
-}
-
-#disclaimer a{
-    text-decoration: none;
-    color: black;
-}
-
-#subscription a {
-    text-decoration: none;
-    color: black;
-}
-
-#subscription nav {
-    margin-top: 10px;
-}
-
-.linksnsubscribe {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.subbutton {
-    border: 2px solid #3899a2;
-    background-color: #3899a2;
-} */
 
 body {
     font-family: 'Arial', sans-serif;
@@ -200,14 +16,37 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    width: 550px;
+    max-width: 2000px;
+    width: 100%;
     height: 1050px;
+    display: flex;
+}
+
+.form-details, .form-box {
+    width:100%;
+}
+
+.form-details {
+    background-image: url("/images/info_pic_regform.png");
+    background-size: 459px 1050px;
+    background-repeat: no-repeat;
+    color: #457170;
+}
+
+.form-details h2 {
+    color: #457170;
+    font-size: 50px;
+    margin-top: 50px;
 }
 
 h2 {
     color: #333;
     font-family:Arial, Helvetica, sans-serif;
     margin-bottom: 10px;
+}
+
+#mobile-logo {
+    display: none;
 }
 
 #arrowback {
@@ -333,10 +172,12 @@ footer {
 
 
 @media screen and (max-width: 768px) {
-    body{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr;
+    .form-details {
+        display: none;
+    }
+
+    #mobile-logo {
+        display:block;
     }
 
 }

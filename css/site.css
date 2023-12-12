@@ -155,6 +155,7 @@ h2 {
 
 .newrelease {
     width: 32%;
+    height: 500px;
     margin: 10px;
     padding: 10px;
     border: 1px solid #ccc;
@@ -163,8 +164,13 @@ h2 {
     box-shadow: 1px 1px 10px #09859078;
 }
 
+.newrelease h4 {
+    font-size: larger;
+}
+
 #newR h3 {
     height: 20%;
+    font-size: x-large;
 }
 
 #event {
