@@ -109,7 +109,7 @@ form .input-field input {
 form .input-field label{
     position: absolute;
     top: 45%;
-    left: 55px;
+    left: 45px;
     transform: translateY(-50%);
     pointer-events: none;
     transition: 0.2s ease;
