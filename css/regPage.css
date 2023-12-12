@@ -30,6 +30,7 @@ body {
     background-image: url("/images/info_pic_regform.png"); /*reference from: https://express.adobe.com/express-apps/logo-maker/preview*/
     background-size: 459px 1050px;
     background-repeat: no-repeat;
+    background-position: center;
     color: #457170;
 }
 
@@ -73,13 +74,14 @@ label {
 }
 
 .errorBox {
-    padding-left: 45px;
+    padding-left: 35px;
     text-align: left;
     height: 20px;
 }
 
 .errorBox span {
     color: red;
+    font-size: smaller;
 }
 
 form .input-field {
