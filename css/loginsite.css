@@ -117,7 +117,7 @@ form .input-field input {
 
 form .input-field label{
     position: absolute;
-    top: 37%;
+    top: 30%;
     left: 10%;
     transform: translateY(-50%);
     pointer-events: none;

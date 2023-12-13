@@ -32,7 +32,7 @@ function inputValidation (inputField, errorDisplayElement) {
 }
 
 function Redirect() {
-    window.location.href = "homepage.html";
+    window.location.href = "../index.html";
     alert("Login successful, Welcome back!");
 }
 

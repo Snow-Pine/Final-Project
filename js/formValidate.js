@@ -60,6 +60,11 @@ function numInputValidation (inputField, errorDisplayElement) {
     }
 }
 
+function Redirect() {
+    window.location.href = "../index.html";
+    alert("Submission successful! Please check your mailbox for verification.");
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     $("#email").focus();
 
@@ -91,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let val6 = inputValidation(passwdInput, passwdErrorDisplay);
 
         if (val1 != 1 && val2 != 1 && val3 != 1 && val4 != 1 && val5 != 1 && val6 != 1) {
-            alert("Submission successful! Please check your mailbox for verification.");
+            Redirect();
         } else {
             alert("Please make sure your data are input correctly.");
         }
