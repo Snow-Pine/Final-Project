@@ -109,6 +109,7 @@ footer{
     position: relative;
     display: flex;
     align-items: center;
+	justify-content:space-between;
     width: 100%;
     background-color: #FAF9F6;
 }
@@ -121,11 +122,11 @@ footer{
     width: 100%;
 }
 
-#searchingBar {
+/* #searchingBar {
     width: 70%;
     display: flex;
     justify-content: center;
-}
+} */
 #searchingBar input {
     box-sizing: border-box;
     padding-right: 80px;
@@ -466,6 +467,9 @@ footer{
         grid-column: 1/4;
         grid-row: 2/3;
         width: 100%;
+    }
+	.logo {
+        margin: 0 10px;
     }
     #searchingBar form{
         width: 90%;

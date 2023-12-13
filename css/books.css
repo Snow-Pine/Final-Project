@@ -99,6 +99,7 @@ tr a:hover {
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     background-color: #FAF9F6;
 }
@@ -111,11 +112,11 @@ tr a:hover {
     width: 100%;
 }
 
-#searchingBar {
+/* #searchingBar {
     width: 70%;
     display: flex;
     justify-content: center;
-}
+} */
 #searchingBar input {
     box-sizing: border-box;
     padding-right: 80px;
@@ -252,10 +253,14 @@ tr a:hover {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr 1fr;
     }
+    .logo {
+        margin: 0 10px;
+    }
     #searchingBar {
         grid-column: 1/4;
         grid-row: 2/3;
         width: 100%;
+        margin-left: 0px;
     }
     #searchingBar form{
         width: 90%;

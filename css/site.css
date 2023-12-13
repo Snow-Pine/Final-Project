@@ -66,7 +66,7 @@ body {
 #search {
     position: relative;
     display: flex;
-    /* justify-content:space-between; */
+    justify-content:space-between;
     align-items: center;
     width: 100%;
     background-color: #FAF9F6;
@@ -81,11 +81,11 @@ body {
     width: 100%;
 }
 
-#searchingBar {
+/* #searchingBar {
     width: 70%;
     display: flex;
     justify-content: center;
-}
+} */
 
 
 #searchingBar input {
@@ -318,11 +318,15 @@ h2 {
         grid-template-rows: 1fr 1fr;
     }
 
+    .logo {
+        margin: 0 10px;
+    }
+
     #searchingBar {
         grid-column: 1/4;
         grid-row: 2/3;
         width: 100%;
-        margin-left: 30px;
+        margin-left: 0px;
     }
 
     #searchingBar form{
