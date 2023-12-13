@@ -1,5 +1,4 @@
 @import url('normalize.css');
-@import url('demo.css');
 
 @font-face {
   font-family: 'icon';
@@ -13,10 +12,234 @@
   font-style: normal;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto+Slab&display=swap');
+
+@font-face {
+    font-family: 'Noto Sans', sans-serif;
+    src: url(https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto+Slab&display=swap);
+  }
+
+#book1{
+	background-image: url("../images/Tupac\ Shakur\ cover.jpeg");
+}
+#book2{
+	background-image: url("../images/Leafs\ 365\ cover.webp");
+}
+#book3{
+	background-image: url("../images/Goth\ cover.jpeg");
+}
+#book4{
+	background-image: url("../images/How\ to\ Be\ the\ Love\ You\ Seek-\ Break\ Cycles\,\ Find\ Peace\,\ and\ Heal\ Your\ Relationships.jpg");
+}
+#book5{
+	background-image: url("../images/Paddington.webp");
+}
+#book6{
+	background-image: url("../images/whaleletter.webp");
+}
+#book7{
+	background-image: url("../images/BookOfCrosswords.webp");
+}
+#book8{
+	background-image: url("../images/cookLikeAncestors.webp");
+}
+#book9{
+	background-image: url("../images/gentleman\'sGambit.jpeg");
+}
+#book10{
+	background-image: url("../images/poleAndOtherStories.webp");
+}
+
+header{
+	height: 20%;
+}
+
+footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 20%;
+}
+
+#headertopbanner {
+    background-color: black;
+    height: 3em;
+    color: azure;
+    font-family:'Noto Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.marquee{
+    margin: 0 auto;
+    will-change: transform;
+    animation-name: marquee;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+@keyframes marquee {
+	from {
+		transform: translateX(calc(50vw + 50%));
+	}
+	to {
+		transform: translateX(calc(-50vw + -50%));
+	}
+}
+#headertop {
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    font-family:'Noto Sans', sans-serif;
+    width: 100%;
+    height: 3em;
+    background-color: #FAF9F6;
+}
+#headertop a {
+    margin-right: 1em;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+#headertop a:hover {
+    color: #008a96;
+}
+#search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #FAF9F6;
+}
+.logo {
+    margin-left: 30px;
+    margin-right: 100px;
+}
+
+#function {
+    width: 100%;
+}
+
+#searchingBar {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+#searchingBar input {
+    box-sizing: border-box;
+    padding-right: 80px;
+    padding-left: 14px;
+    height: 3em;
+    width: 80%;
+    border: none;
+    font-size: 18px;
+    outline: none;
+}
+#searchingBar form {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    border-radius: 28px;
+    border: 2px gray solid;
+    background-color: white;
+}
+#searchingBar span {
+    padding-left: 14px;
+}
+.navbar-head a:hover,
+#function span:hover,
+#searchingBar span:hover,
+#subscription svg:hover,
+#disclaimer a:hover,
+.navbar-foot a:hover{
+    color: #008a96;
+}
+#function {
+    display: flex;
+    width: 200px;
+}
+.header-icons {
+    color: black;
+    padding: 10px 10px;
+}
+.navbar-head {
+    font-family:'Noto Sans', sans-serif;
+    padding: 1.5em 0 1.5em 0;
+    border-bottom: 1px gray solid;
+    background-color: #FAF9F6;
+}
+.navbar-head nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.navbar-head a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    margin: 0 20px;
+    font-size: 18px;
+    font-family: 'Noto Sans', sans-serif;
+}
+.social {
+    border-top: 1px gray solid;
+    font-family:'Noto Sans', sans-serif;
+    background-color: #FAF9F6;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2em;
+    margin-top: 2em;
+}
+.navbar-foot nav{
+    display: flex;
+    flex-direction: column;
+}
+.navbar-foot span{
+    font-weight: 800;
+    font-family:'Noto Sans', sans-serif;
+    color: rgb(28, 28, 28);
+    padding-bottom: 10px;
+}
+.navbar-foot a{
+    text-decoration: none;
+    font-family:'Noto Sans', sans-serif;
+    color: rgb(71, 71, 71);
+    margin-bottom: 5px;
+}
+#disclaimer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0 1em 0;
+}
+
+#disclaimer a{
+    text-decoration: none;
+    color: black;
+}
+#subscription a {
+    text-decoration: none;
+    color: black;
+}
+#subscription nav {
+    margin-top: 10px;
+}
+.linksnsubscribe {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.subbutton {
+    border: 2px solid #3899a2;
+    background-color: #3899a2;
+}
+
 .ps-container {
 	position: absolute;
 	width: 100%;
-	height: 100%;
+	height: 60%;
 	overflow: hidden;
 	color: #555;
 	background: #fafafa;
@@ -124,7 +347,6 @@
 	font-family: 'icon';
 	font-style: normal;
 	font-weight: normal;
-	speak: none;
 	padding-right: 5px;
 }
 
@@ -229,6 +451,47 @@
 }
 
 @media screen and (max-width: 860px) {
+	footer{
+		height: 5%;
+	}
+	#headertop {
+        display: none;
+    }
+    #search {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+    #searchingBar {
+        grid-column: 1/4;
+        grid-row: 2/3;
+        width: 100%;
+    }
+    #searchingBar form{
+        width: 90%;
+        margin-left: 2em;
+    }
+    #function {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .navbar-head nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar-head a {
+        margin-bottom: 0.5em;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+    .navbar-foot {
+        display: none;
+    }
+    .linksnsubscribe {
+        margin-bottom: 2em;
+    }
 
 	.js .ps-container > div {
 		width: 100%;
