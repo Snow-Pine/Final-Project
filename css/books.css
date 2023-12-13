@@ -4,7 +4,9 @@
     font-family: 'Noto Sans', sans-serif;
     src: url(https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto+Slab&display=swap);
   }
-
+body {
+    margin: 0;
+}
 #books{
     display:grid;
     grid-template-columns: 24% 24% 24% 24%;
