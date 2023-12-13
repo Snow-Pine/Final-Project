@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (val1 != 1 && val2 != 1 && val3 != 1 && val4 != 1 && val5 != 1 && val6 != 1) {
             alert("Submission successful! Please check your mailbox for verification.");
         } else {
-            alert("Please make sure your data are correctly input.");
+            alert("Please make sure your data are input correctly.");
         }
     }
 
