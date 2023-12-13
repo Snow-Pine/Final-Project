@@ -177,4 +177,9 @@ footer {
     #mobile-logo {
         display:block;
     }
+
+    .login-container {
+        max-height: 700px;
+        height: 100%;
+    }
 }
