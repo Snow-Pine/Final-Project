@@ -1,4 +1,11 @@
 /* Tsz Chin Wong n01604038 wireframe1 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+@font-face {
+    font-family: 'Roboto Slab', serif;
+    src: url(https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap);
+  }
+
 body {
     margin:0;
 }
@@ -8,9 +15,28 @@ body {
     height: 3em;
 }
 
+.marquee{
+    margin: 0 auto;
+    will-change: transform;
+    animation-name: marquee;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes marquee {
+	from {
+		transform: translateX(calc(50vw + 50%));
+	}
+	to {
+		transform: translateX(calc(-50vw + -50%));
+	}
+}
+
 #headertopbanner {
     color: azure;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Slab', serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +46,7 @@ body {
     display: flex;
     justify-content:end;
     align-items: center;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Slab', serif;
     width: 100%;
     height: 3em;
     background-color: #FAF9F6;
@@ -40,10 +66,25 @@ body {
 #search {
     position: relative;
     display: flex;
-    justify-content:space-between;
+    /* justify-content:space-between; */
     align-items: center;
     width: 100%;
     background-color: #FAF9F6;
+}
+
+.logo {
+    margin-left: 30px;
+    margin-right: 50px;
+}
+
+#function {
+    width: 100%;
+}
+
+#searchingBar {
+    width: 70%;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -55,6 +96,7 @@ body {
     width: 80%;
     border: none;
     font-size: 18px;
+    outline: none;
 }
 
 
@@ -98,7 +140,7 @@ body {
 }
 
 .navbar-head {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Slab', serif;
     padding: 1.5em 0 1.5em 0;
     border-bottom: 1px gray solid;
     background-color: #FAF9F6;
@@ -108,20 +150,25 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
-.navbar-head a {
+.navbar-head a{
     text-decoration: none;
     color: black;
+    margin: 0 20px;
     font-size: 18px;
-    margin-left: 1.2em;
+    font-family: 'Roboto Slab', serif;
 }
 
 #greeting h3, #greeting p {
     margin: 0 50px 15px 50px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 
+.subheading{
+    margin-top: 50px;
+}
 
 #newR {
     margin: 10px 20px 40px 20px;
@@ -135,7 +182,7 @@ body {
 
 
 h2 {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Roboto Slab', serif;
     color: #006d77;
     letter-spacing: 0.5px;
     margin: 20px 20px 0px 30px;
@@ -148,7 +195,7 @@ h2 {
 
 #shortdesc {
     font-style: italic;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Roboto Slab', serif;
     font-size: medium;
     overflow: auto;
 }
@@ -196,7 +243,7 @@ h2 {
 
 .social {
     border-top: 1px gray solid;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Slab', serif;
     background-color: #FAF9F6;
     display: flex;
     flex-direction: column;
@@ -211,14 +258,14 @@ h2 {
 
 .navbar-foot span{
     font-weight: 800;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Slab', serif;
     color: rgb(28, 28, 28);
     padding-bottom: 10px;
 }
 
 .navbar-foot a{
     text-decoration: none;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Slab', serif;
     color: rgb(71, 71, 71);
     margin-bottom: 5px;
 }
@@ -274,6 +321,7 @@ h2 {
         grid-column: 1/4;
         grid-row: 2/3;
         width: 100%;
+        margin-left: 30px;
     }
 
     #searchingBar form{

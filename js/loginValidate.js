@@ -11,9 +11,11 @@ function emailValidation () {
     if (!emailPattern.match(validRegex)) {
         $("#usernameErrorMsg").innerHTML = "Error: Must be a valid email address.";
         $("#username").value = "";
+        return 1;
     }
     else {
         $("#usernameErrorMsg").innerHTML = "";
+        return 0;
     }
 }
 
@@ -21,10 +23,17 @@ function inputValidation (inputField, errorDisplayElement) {
     const value = inputField.value;
     if (value.trim() !== "") {
         errorDisplayElement.innerHTML = "";
+        return 0;
     } else {
         errorDisplayElement.innerHTML = "Error: please enter password.";
         inputField.value = "";
+        return 1;
     }
+}
+
+function Redirect() {
+    window.location.href = "homepage.html";
+    alert("Login successful, Welcome back!");
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -34,9 +43,18 @@ document.addEventListener("DOMContentLoaded", () => {
     function overallValidation () {
         emailValidation();
         inputValidation(passwordInput, passwordErrorDisplay);
+
+        let val1 = emailValidation();
+        let val2 = inputValidation(passwordInput, passwordErrorDisplay);
+
+        if (val1 != 1 && val2 != 1) {
+            Redirect();
+        } else {
+            alert("Please check your input again.");
+        }
     }
 
-    $("#submit").addEventListener("click", overallValidation);
+    $("#login").addEventListener("click", overallValidation);
     
 });
 
