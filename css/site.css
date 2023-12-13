@@ -1,13 +1,14 @@
 /* Tsz Chin Wong n01604038 wireframe1 */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto+Slab&display=swap');
 
 @font-face {
-    font-family: 'Roboto Slab', serif;
-    src: url(https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap);
+    font-family: 'Noto Sans', sans-serif;
+    src: url(https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto+Slab&display=swap);
   }
 
 body {
     margin:0;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 #headertopbanner {
@@ -36,7 +37,7 @@ body {
 
 #headertopbanner {
     color: azure;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Noto Sans', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,7 +47,7 @@ body {
     display: flex;
     justify-content:end;
     align-items: center;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Noto Sans', sans-serif;
     width: 100%;
     height: 3em;
     background-color: #FAF9F6;
@@ -74,7 +75,7 @@ body {
 
 .logo {
     margin-left: 30px;
-    margin-right: 50px;
+    margin-right: 100px;
 }
 
 #function {
@@ -131,7 +132,8 @@ body {
 
 #function {
     display: flex;
-    width: 200px;
+    max-width: 200px;
+    width: 100%;
 }
 
 .header-icons {
@@ -140,7 +142,7 @@ body {
 }
 
 .navbar-head {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Noto Sans', sans-serif;
     padding: 1.5em 0 1.5em 0;
     border-bottom: 1px gray solid;
     background-color: #FAF9F6;
@@ -158,12 +160,12 @@ body {
     color: black;
     margin: 0 20px;
     font-size: 18px;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 #greeting h3, #greeting p {
     margin: 0 50px 15px 50px;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .subheading{
@@ -182,7 +184,7 @@ body {
 
 
 h2 {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Noto Sans', sans-serif;
     color: #006d77;
     letter-spacing: 0.5px;
     margin: 20px 20px 0px 30px;
@@ -195,7 +197,7 @@ h2 {
 
 #shortdesc {
     font-style: italic;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Noto Sans', sans-serif;
     font-size: medium;
     overflow: auto;
 }
@@ -243,7 +245,7 @@ h2 {
 
 .social {
     border-top: 1px gray solid;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Noto Sans', sans-serif;
     background-color: #FAF9F6;
     display: flex;
     flex-direction: column;
@@ -258,14 +260,14 @@ h2 {
 
 .navbar-foot span{
     font-weight: 800;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Noto Sans', sans-serif;
     color: rgb(28, 28, 28);
     padding-bottom: 10px;
 }
 
 .navbar-foot a{
     text-decoration: none;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Noto Sans', sans-serif;
     color: rgb(71, 71, 71);
     margin-bottom: 5px;
 }
